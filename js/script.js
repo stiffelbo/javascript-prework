@@ -2,6 +2,11 @@ document.getElementById("kamien").addEventListener('click', function() { playGam
 document.getElementById("papier").addEventListener('click', function() { playGame(2); });
 document.getElementById("nozyce").addEventListener('click', function() { playGame(3); });
 
+let roundCounter = 0;
+let robotCounter = 0;
+let playerCounter = 0;
+let maxCounter = 10;
+
 function playGame(playerInput) {
     clearMessages();
 
