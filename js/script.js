@@ -1,3 +1,7 @@
+document.getElementById("kamien").addEventListener('click', function() { playGame(1); });
+document.getElementById("papier").addEventListener('click', function() { playGame(2); });
+document.getElementById("nozyce").addEventListener('click', function() { playGame(3); });
+
 function playGame(playerInput) {
     clearMessages();
 
@@ -12,6 +16,3 @@ function playGame(playerInput) {
 }
 
 /* Listnery nie działąją u mnie, w opcji z dodaniem onClick w HTMl wszytko chodzi. Może coś w przeglądarce blokuje */
-document.getElementById("kamien").addEventListener('click', playGame(1));
-document.getElementById("papier").addEventListener('click', playGame(2));
-document.getElementById("nozyce").addEventListener('click', playGame(3));

@@ -4,17 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Kamień, papier, nożyce</title>
+    <script src="https://kit.fontawesome.com/f8e7e4385e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div id="buttons">
-            <button id="kamien" onclick="playGame(1)">Kamień</button>
-            <button id="papier" onclick="playGame(2)">Papier</button>
-            <button id="nozyce" onclick="playGame(3)">Nożyce</button>
+    <header class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row counter-box">
+                    <i class="fas fa-smile-beam"></i>
+                    <div class="counter">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col header">
+                <h1>Rock Scisors Paper</h1>
+            </div>
+            <div class="col">
+                <div class="row counter-box">
+                    <i class="fas fa-robot"></i>
+                    <div class="counter">
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-        <div id="messages"></div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col" id="player-btns">
+                <div class="button-box">
+                    <div class="btn-warpper">
+                        <img src="images/rock.png" id="kamien">
+                    </div>
+                    <div class="btn-warpper">
+                        <img src="images/scisor.png" id="nozyce">
+                    </div>
+                    <div class="btn-warpper">
+                        <img src="images/paper.png" id="papier">
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="winner">
+                <div id="messages"></div>
+            </div>
+            <div class="col" id="robot-btns">
+                <div class="button-box">
+                    <div class="btn-warpper">
+                        <img src="images/rock_r.png" id="kamien_robot">
+                    </div>
+                    <div class="btn-warpper">
+                        <img src="images/scisor_r.png" id="nozyce_robot">
+                    </div>
+                    <div class="btn-warpper">
+                        <img src="images/paper_r.png" id="papier_robot">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
