@@ -8,8 +8,6 @@ function clearMessages() {
     document.getElementById('messages').innerHTML = '';
 }
 
-//game functions
-
 function getMoveName(argMoveId) {
     if (argMoveId == 1) {
         return 'kamień';
@@ -24,7 +22,6 @@ function getMoveName(argMoveId) {
 }
 
 function displayResult(argComputerMove, argPlayerMove) {
-    console.log('moves:', argComputerMove, argPlayerMove);
 
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
