@@ -1,11 +1,10 @@
 /* Global */
-/*Resets*/
+/*Resets border: 1px solid magenta;*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
-  border: 1px solid magenta;
 }
 
 /* Variables*/
@@ -38,7 +37,6 @@ header .header {
   height: 15px;
   width: 300px;
   border-radius: 4px;
-  background-image: -moz-linear-gradient(90deg, red 10%, transparent 10%);
   border: 2px solid black;
 }
 
@@ -51,6 +49,7 @@ header .header {
 
 .button-box .btn-warpper {
   text-align: center;
+  margin: 10px;
 }
 
 .button-box .btn-warpper img {
@@ -58,6 +57,32 @@ header .header {
      object-fit: cover;
   height: 200px;
   width: 200px;
+}
+
+.button-box .btn-warpper .player-btn:hover {
+  cursor: pointer;
+}
+
+.button-box .btn-warpper .robot-btn:hover {
+  cursor: not-allowed;
+}
+
+.button-box .btn-warpper .picked {
+  border: 5px solid #990000;
+  box-shadow: 0px 0px 15px 2px #990000;
+  border-radius: 50%;
+}
+
+.button-box .btn-warpper .win {
+  border: 5px solid #009908;
+  box-shadow: 0px 0px 15px 2px #009908;
+  border-radius: 50%;
+}
+
+.button-box .btn-warpper .draw {
+  border: 5px solid #004799;
+  box-shadow: 0px 0px 15px 2px #004799;
+  border-radius: 50%;
 }
 
 #winner {

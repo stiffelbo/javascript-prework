@@ -1,12 +1,11 @@
     /* Global */
-    /*Resets*/
+    /*Resets border: 1px solid magenta;*/
     
     *,
     *::before,
     *::after {
         box-sizing: border-box;
         margin: 0;
-        border: 1px solid magenta;
     }
     /* Variables*/
     
@@ -33,7 +32,6 @@
             height: 15px;
             width: 300px;
             border-radius: 4px;
-            background-image: -moz-linear-gradient(90deg, red 10%, transparent 10%);
             border: 2px solid black;
         }
     }
@@ -43,10 +41,35 @@
         flex-direction: column;
         .btn-warpper {
             text-align: center;
+            margin: 10px;
             img {
                 object-fit: cover;
                 height: 200px;
                 width: 200px;
+            }
+            .player-btn:hover {
+                cursor: pointer;
+            }
+            .robot-btn:hover {
+                cursor: not-allowed;
+            }
+            .picked {
+                border: 5px solid #990000;
+                -webkit-box-shadow: 0px 0px 15px 2px #990000;
+                box-shadow: 0px 0px 15px 2px #990000;
+                border-radius: 50%;
+            }
+            .win {
+                border: 5px solid #009908;
+                -webkit-box-shadow: 0px 0px 15px 2px #009908;
+                box-shadow: 0px 0px 15px 2px #009908;
+                border-radius: 50%;
+            }
+            .draw {
+                border: 5px solid #004799;
+                -webkit-box-shadow: 0px 0px 15px 2px #004799;
+                box-shadow: 0px 0px 15px 2px #004799;
+                border-radius: 50%;
             }
         }
     }
