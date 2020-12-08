@@ -7,7 +7,6 @@
   margin: 0;
 }
 
-/* Variables*/
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -20,7 +19,7 @@ header .header {
   text-align: center;
 }
 
-.counter-box {
+header .counter-box {
   height: 40px;
   display: -ms-flexbox;
   display: flex;
@@ -28,12 +27,12 @@ header .header {
       align-items: center;
 }
 
-.counter-box i {
+header .counter-box i {
   line-height: 35px;
   padding: 0 15px;
 }
 
-.counter-box .counter {
+header .counter-box .counter {
   height: 15px;
   width: 300px;
   border-radius: 4px;
@@ -85,12 +84,18 @@ header .header {
   border-radius: 50%;
 }
 
-#winner {
+#display {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+}
+
+#display #messages {
+  -ms-flex: 1;
+      flex: 1;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

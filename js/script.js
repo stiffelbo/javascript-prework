@@ -1,14 +1,17 @@
-var roundCounter = 1;
-var robotCounter = 0;
-var playerCounter = 0;
-var maxCounter = 10;
+let roundCounter = 1;
+let robotCounter = 0;
+let playerCounter = 0;
+let maxCounter = 10;
 
 
-document.getElementById("kamien").addEventListener('click', function() { playGame(1); });
-document.getElementById("papier").addEventListener('click', function() { playGame(2); });
-document.getElementById("nozyce").addEventListener('click', function() { playGame(3); });
+const btnRock = document.getElementById("kamien");
+btnRock.addEventListener('click', function() { playGame(1); });
+const btnPaper = document.getElementById("papier");
+btnPaper.addEventListener('click', function() { playGame(2); });
+const btnScisors = document.getElementById("nozyce");
+btnScisors.addEventListener('click', function() { playGame(3); });
 
-function playGame(playerInput) {
+const playGame = function(playerInput) {
     clearMessages();
     roundCounter++;
     //clear previous robot choice
@@ -36,5 +39,3 @@ function playGame(playerInput) {
     displayResult(computerMove, playerMove);
 
 }
-
-/* Listnery nie działąją u mnie, w opcji z dodaniem onClick w HTMl wszytko chodzi. Może coś w przeglądarce blokuje */

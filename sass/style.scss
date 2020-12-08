@@ -7,7 +7,6 @@
         box-sizing: border-box;
         margin: 0;
     }
-    /* Variables*/
     
     body {
         font-family: 'Roboto', sans-serif;
@@ -18,21 +17,20 @@
         .header {
             text-align: center;
         }
-    }
-    
-    .counter-box {
-        height: 40px;
-        display: flex;
-        align-items: center;
-        i {
-            line-height: 35px;
-            padding: 0 15px;
-        }
-        .counter {
-            height: 15px;
-            width: 300px;
-            border-radius: 4px;
-            border: 2px solid black;
+        .counter-box {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            i {
+                line-height: 35px;
+                padding: 0 15px;
+            }
+            .counter {
+                height: 15px;
+                width: 300px;
+                border-radius: 4px;
+                border: 2px solid black;
+            }
         }
     }
     
@@ -74,8 +72,12 @@
         }
     }
     
-    #winner {
+    #display {
         display: flex;
         justify-content: center;
         align-items: center;
+        #messages {
+            flex: 1;
+            text-align: center;
+        }
     }
